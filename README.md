@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+![App Screenshot](https://github.com/iqbalsetiawan/bvk_movie/assets/52906490/7ee9c7c7-8148-458c-9197-8b42903ef65e)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vidio
 
-## Available Scripts
+Vidio is a responsive web application designed for movie enthusiasts to browse, search, and manage a list of watched movies. Leveraging The Movie Database (TMDB) API, Vidio offers up-to-date information on movies, including details like genres, ratings, and summaries. Users can mark movies as watched, explore movie details, and maintain a personalized list of watched movies with seamless offline support for adding and removing movies from their watched list.
 
-In the project directory, you can run:
+## Demo
 
-### `npm start`
+https://bvk-movie.vercel.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Browse Movies**: Explore popular movies fetched directly from TMDB.
+- **Search Functionality**: Search for movies using TMDB's vast database.
+- **Movie Details**: View detailed information about each movie, including posters, genres, ratings, and summaries.
+- **Watched List**: Keep track of movies you've watched and manage your list.
+- **Offline Support**: Add or remove movies from your watched list even when offline. Changes will sync automatically once you're back online.
 
-### `npm test`
+## Technology Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: For building the user interface.
+- **React Router**: For managing navigation within the application.
+- **Axios**: For making HTTP requests to the TMDB API.
+- **SweetAlert2**: For displaying informative alerts and notifications.
+- **Service Workers**: To enhance offline capabilities (if implemented).
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running, follow these simple steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js installed on your system.
+- An API key from TMDB for fetching movie data.
 
-### `npm run eject`
+To get a TMDb API key, visit https://www.themoviedb.org/documentation/api
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/vidio.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd vidio
+   ```
+3. Install NPM packages:
+   ```sh
+   npm install
+   ```
+4. Create a `.env` file in the root directory and add your TMDB API key:
+   ```plaintext
+   REACT_APP_TMDB_API_KEY=your_api_key_here
+   ```
+5. Start the development server:
+   ```sh
+   npm start
+   ```
+   The application will be available at `http://localhost:3000`.
