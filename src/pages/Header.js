@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import Logo from "../assets/Logo.png";
 import { useOnlineStatus } from "../context/OnlineStatusContext";
@@ -8,6 +8,9 @@ function Header({ onSearch, children }) {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
   const isOnline = useOnlineStatus();
+  const location = useLocation();
+
+  const isSearchDisabled = location.pathname === "/watched" || !isOnline;
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -53,7 +56,7 @@ function Header({ onSearch, children }) {
             placeholder="Search for movies..."
             value={searchTerm}
             onChange={handleSearchChange}
-            disabled={!isOnline}
+            disabled={isSearchDisabled}
           />
         </div>
       </header>
